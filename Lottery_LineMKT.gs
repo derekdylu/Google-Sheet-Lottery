@@ -1,10 +1,10 @@
 var sheetApp = SpreadsheetApp.getActiveSpreadsheet();  
 var sheet1 = sheetApp.getSheetByName('表單回應 1');  
 
-var firstPrizeRowNum = 3;
-var lastPrizeRowNum = 3;
+var firstPrizeRowNum = 5;
+var lastPrizeRowNum = 9;
 
-var randColumnRange = "S2:S434";
+var randColumnRange = "S2:S246";
 
 function setRand() {
   sheet1.getRange(randColumnRange).setFormula("=RAND()");
@@ -14,7 +14,7 @@ function setRand() {
 function getPrize() {  
   sheet1.getRange("W" + firstPrizeRowNum + ":W" + lastPrizeRowNum).clearContent();
 
-  SpreadsheetApp.getUi().alert('抽獎中...誰會獲得哈士奇呢🐶');
+  SpreadsheetApp.getUi().alert('抽獎中...🥰🥰🥰');
   
   var j = 2;
   
